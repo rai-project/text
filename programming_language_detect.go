@@ -5,6 +5,6 @@ import (
 )
 
 func DetectProgrammingLanguage(text string) (string, bool) {
-	lang, safe := enry.GetLanguageByContent(text)
+	lang, safe := enry.GetLanguageByModeline([]byte(text))
 	return lang, safe
 }

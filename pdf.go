@@ -8,10 +8,10 @@ import (
 )
 
 func ReadPDF(bts0 []byte) (string, error) {
-	bts := bytes.NewBuffer(bts0)
+	bts := bytes.NewReader(bts0)
 	res := &bytes.Buffer{}
 
-	pdfReader, err := pdf.NewPdfReader(f)
+	pdfReader, err := pdf.NewPdfReader(bts)
 	if err != nil {
 		return "", err
 	}
@@ -58,7 +58,7 @@ func ReadPDF(bts0 []byte) (string, error) {
 		if err != nil {
 			return "", err
 		}
-		res.Write(txt)
+		res.Write([]byte(txt))
 	}
 
 	return res.String(), nil
