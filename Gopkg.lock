@@ -58,6 +58,25 @@
   version = "6.3.107"
 
 [[projects]]
+  digest = "1:05e5a2e854eeeddda5e5ed5929ac53ce614b83a13a01d206b9d11e8ef56363be"
+  name = "github.com/mozillazg/go-slugify"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "591116de2dd717fdb8c05e29fa3bf5d3f7ba8c87"
+  version = "v0.2.0"
+
+[[projects]]
+  digest = "1:be88a46cd36136d9a0fbe8f42dffc269a62544e3a12ff3b047b4704f9b349b42"
+  name = "github.com/mozillazg/go-unidecode"
+  packages = [
+    ".",
+    "table",
+  ]
+  pruneopts = "UT"
+  revision = "7ab3c72180eeb79ccb8746137e14d6b0a60dd685"
+  version = "v0.1.0"
+
+[[projects]]
   branch = "master"
   digest = "1:2699f40ea73866f38eccb385738750a71a05cec654f029e78f620caccefd85e4"
   name = "github.com/toqueteos/trie"
@@ -187,6 +206,7 @@
     "github.com/abadojack/whatlanggo",
     "github.com/bbalet/stopwords",
     "github.com/microcosm-cc/bluemonday",
+    "github.com/mozillazg/go-slugify",
     "github.com/unidoc/unidoc/pdf/contentstream",
     "github.com/unidoc/unidoc/pdf/model",
     "gopkg.in/jdkato/prose.v2",
